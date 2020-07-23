@@ -4,4 +4,4 @@
 
 Автоматическая обрезка текста, если он не помещается в блок с добавлением многоточия.
 
-Сайт: https://stasokulov.github.io/landing_trucking_company/
+Сайт: https://stasokulov.github.io/sksis/
