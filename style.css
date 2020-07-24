@@ -14,6 +14,9 @@ main {
 .hover-opacity:hover {
     opacity: .5;
 }
+.hidden {
+    display: none;
+}
 
 .header {
     padding-top: 22px;
@@ -914,7 +917,6 @@ main {
         position: absolute;
         top: 0;
         transform: translateX(-15px);
-        box-shadow: 0 5px 5px -6px #000;
     }
     .header__menu-list {
         flex-direction: column;
@@ -953,7 +955,7 @@ main {
         flex-wrap: wrap;
     }
     .banner__statistics-item {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
     .banner__footer {
         height: auto;
