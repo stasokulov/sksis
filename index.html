@@ -149,8 +149,8 @@
     </div>
   </header>
   <main class="container">
-    <section class="banner">
-      <div class="banner__img"></div>
+    <section class="banner slider">
+
       <div class="row banner__main">
         <div class="col-lg-4">
           <div class="banner__about">
@@ -182,13 +182,17 @@
             </div>
           </div>
         </div>
-<!--        <div class="col-8 banner__img-area"></div>-->
       </div>
       <div class="row banner__footer">
         <div class="col-lg-4">
           <div class="banner__btn-wrap">
             <button class="banner__btn hover-opacity">Подробнее о колледже</button>
           </div>
+        </div>
+        <div class="slide-list">
+          <div class="slide slide_1 active"></div>
+          <div class="slide slide_2"></div>
+          <div class="slide slide_3"></div>
         </div>
         <div class="col-lg-8 banner__event">
           <div class="banner__event-date">
@@ -281,24 +285,42 @@
         </div>
         <div class="container">
           <div class="row tiles">
-            <div class="col-6 col-sm-4 tiles__tile tiles__tile_background_blue-4 tiles__tile_color_withe">
-              <span class="tiles__tile-text">Экономика и бухгалтер&shy;ский учет</span>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_withe">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-4">
+                <span class="tiles__tile-text">Экономика и бухгалтер&shy;ский учет</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-1"></div>
             </div>
-            <div class="col-6 col-sm-4 tiles__tile tiles__tile_background_blue-2 tiles__tile_color_black">
-              <span class="tiles__tile-text">Почтовая связь</span>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-2">
+                <span class="tiles__tile-text">Почтовая связь</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-2"></div>
             </div>
-            <div class="col-6 col-sm-4 tiles__tile tiles__tile_background_blue-1 tiles__tile_color_black">
-              <span class="tiles__tile-text">Прикладная эстетика</span>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-1">
+                <span class="tiles__tile-text">Прикладная эстетика</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-3"></div>
             </div>
-            <div class="col-6 col-sm-4 tiles__tile tiles__tile_background_blue-5 tiles__tile_color_withe tiles__tile_background_img-1">
-              <span class="tiles__tile-text">Оператор связи</span>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_withe">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-5">
+                <span class="tiles__tile-text">Оператор связи</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-4"></div>
             </div>
-            <div class="col-6 col-sm-4 tiles__tile tiles__tile_background_blue-3 tiles__tile_color_black">
-              <span class="tiles__tile-text">Страховое дело</span>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-3">
+                <span class="tiles__tile-text">Страховое дело</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-5"></div>
             </div>
-            <div class="col-6 col-sm-4 tiles__tile tiles__tile_background_blue-4 tiles__tile_color_black tiles__tile_content_centred">
-              <span class="tiles__tile-text tiles__tile-text_bold">10+</span>
-              <span class="tiles__tile-text">направлений</span>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-4 tiles__tile-frontface_content_centred">
+                <span class="tiles__tile-text tiles__tile-text_bold">10+</span>
+                <span class="tiles__tile-text">направлений</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-6"></div>
             </div>
           </div>
         </div>
@@ -322,6 +344,69 @@
         <div class="content-block__title">Преподаватели</div>
         <button class="content-block__btn">Все</button>
         <div class="people-list">
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
           <div class="people-list__item">
             <div class="people-list__image people-list__image_avatar-1"></div>
             <div class="people-list__text">
@@ -509,5 +594,6 @@
   <script src="script/insert_date.js"></script>
   <script src="script/sticky-header.js"></script>
   <script src="script/header-menu.js"></script>
+  <script src="script/slider.js"></script>
 </body>
 </html>

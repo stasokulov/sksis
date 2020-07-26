@@ -84,17 +84,17 @@ main {
 .social__item_fb:before {
     width: 12px;
     height: 20px;
-    background-image: url("img/fb.svg");
+    background-image: url("img/social/fb.svg");
 }
 .social__item_vk:before {
     width: 28px;
     height: 18px;
-    background-image: url("img/vk.svg");
+    background-image: url("img/social/vk.svg");
 }
 .social__item_insta:before {
     width: 18px;
     height: 18px;
-    background-image: url("img/insta.svg");
+    background-image: url("img/social/insta.svg");
 }
 .social__item-text {
     padding-left: 12px;
@@ -339,17 +339,50 @@ main {
     padding: 0;
 }
 
-.banner {
-    background-color: #D8F2FF;
-    background-image: url("img/people/students_2.jpg");
-    background-repeat: no-repeat;
+.slider {
+    position: relative;
+}
+.slide-list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide.active {
+    opacity: 1;
+}
+.slide_1 {
+    background-image: url("img/img/students_1.webp");
+}
+.slide_2 {
+    background-image: url("img/img/students_2.jpg");
+}
+.slide_3 {
+    background-image: url("img/img/students_3.jpg");
+}
+
+
+.banner {
     color: #fff;
     margin-bottom: 46px;
 }
 .banner__img {
     display: none;
-    background-image: url("img/people/students_2.jpg");
+    background-image: url("img/img/students_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -397,8 +430,6 @@ main {
 .banner__statistics-text-word {
     margin-right: 8px;
 }
-/*.banner__img-area {*/
-/*}*/
 .banner__footer {
     height: 100px;
 }
@@ -464,6 +495,7 @@ main {
     font-size: 19px;
     line-height: 22px;
     margin-bottom: 3px;
+    text-transform: uppercase;
 }
 .banner__event-subtitle {
     font-family: 'Exo 2', sans-serif;
@@ -543,10 +575,10 @@ main {
     background-repeat: no-repeat;
 }
 .article-news__image_news-1 {
-    background-image: url("img/people/students_3.jpg");
+    background-image: url("img/img/students_3.jpg");
 }
 .article-news__image_news-2 {
-    background-image: url("img/people/students_4.jpg");
+    background-image: url("img/img/students_4.jpg");
 }
 .article-news__date {
     position: absolute;
@@ -611,10 +643,10 @@ main {
     background-repeat: no-repeat;
 }
 .article-column__image_news-1 {
-    background-image: url("img/people/face_3.jpg");
+    background-image: url("img/staff/face_3.jpg");
 }
 .article-column__image_news-2 {
-    background-image: url("img/people/face_4.jpg");
+    background-image: url("img/staff/face_4.jpg");
 }
 .article-column__text {
     padding-left: 12px;
@@ -665,49 +697,95 @@ main {
     opacity: .5;
 }
 .tiles {
+    perspective: 1700px;
 
 }
 .tiles__tile {
-    padding: 18px 15px 15px 12px;
     height: 120px;
     font-size: 16px;
     line-height: 19px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.tiles__tile_content_centred {
-    display: flex;flex-direction: column;
-    align-items: center;
+    perspective: 1700px;
+    transition: all 2s ease;
 }
 .tiles__tile_color_withe {
     color: #fff;
- }
+}
 .tiles__tile_color_black {
     color: #444;
-}
-.tiles__tile_background_blue-1 {
-    background-color: #EDF9FF;
-}
-.tiles__tile_background_blue-2 {
-    background-color: #D8F2FF;
-}
-.tiles__tile_background_blue-3 {
-    background-color: #BDE6FB;
-}
-.tiles__tile_background_blue-4 {
-    background-color: #2DB4F8;
-}
-.tiles__tile_background_blue-5 {
-    background-color: #008CD3;
-}
-.tiles__tile_background_img-1 {
-    background-image: url("img/people/operator.jpg");
 }
 .tiles__tile-text_bold {
     font-size: 48px;
     line-height: 39px;
     margin-bottom: 20px;
+}
+
+.tiles__tile-frontface {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 18px 15px 15px 12px;
+
+    backface-visibility: hidden;
+    transition: all 2s ease;
+}
+.tiles__tile:hover .tiles__tile-frontface{
+    transform: rotateX(180deg);
+}
+.tiles__tile-frontface_background_blue-1 {
+    background-color: #EDF9FF;
+}
+.tiles__tile-frontface_background_blue-2 {
+    background-color: #D8F2FF;
+}
+.tiles__tile-frontface_background_blue-3 {
+    background-color: #BDE6FB;
+}
+.tiles__tile-frontface_background_blue-4 {
+    background-color: #2DB4F8;
+}
+.tiles__tile-frontface_background_blue-5 {
+    background-color: #008CD3;
+}
+.tiles__tile-frontface_content_centred {
+    display: flex;flex-direction: column;
+    align-items: center;
+}
+
+.tiles__tile-backface {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: all 2s ease;
+}
+.tiles__tile:hover .tiles__tile-backface{
+    transform: rotateX(360deg);
+}
+.tiles__tile-backface_background_img-1 {
+    background-image: url("img/img/economy.jpg");
+}
+.tiles__tile-backface_background_img-2 {
+    background-image: url("img/img/post.webp");
+}
+.tiles__tile-backface_background_img-3 {
+    background-image: url("img/img/aesthetics.webp");
+}
+.tiles__tile-backface_background_img-4 {
+    background-image: url("img/img/operator.jpg");
+}
+.tiles__tile-backface_background_img-5 {
+    background-image: url("img/img/insurance.webp");
+}
+.tiles__tile-backface_background_img-6 {
+    background-image: url("img/img/ways.webp");
 }
 
 .info-card {
@@ -721,7 +799,7 @@ main {
     position: relative;
     height: 170px;
     margin-bottom: 20px;
-    background-image: url("img/people/director.jpg");
+    background-image: url("img/staff/director.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -747,6 +825,8 @@ main {
 .people-list {
     display: flex;
     flex-direction: column;
+    max-height: 256px;
+    overflow-y: scroll;
 }
 .people-list__item {
     display: flex;
@@ -779,13 +859,13 @@ main {
     font-size: 14px;
 }
 .people-list__image_avatar-1 {
-    background-image: url("img/people/face_1.jpg");
+    background-image: url("img/staff/face_1.jpg");
 }
 .people-list__image_avatar-2 {
-    background-image: url("img/people/face_2.jpg");;
+    background-image: url("img/staff/face_2.jpg");;
 }
 .people-list__image_avatar-3 {
-    background-image: url("img/people/face_5.jpg");;
+    background-image: url("img/staff/face_5.jpg");;
 }
 
 .footer-menu {
@@ -934,6 +1014,14 @@ main {
         margin-bottom: 0;
     }
 
+    .slide-list {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .banner {
         background-image: none;
     }
@@ -947,9 +1035,6 @@ main {
     .banner__about-statistics {
         padding-top: 20px;
     }
-    /*.banner__statistics-number {*/
-    /*    line-height: 35px;*/
-    /*}*/
     .banner__statistics-text {
         flex-direction: row;
         flex-wrap: wrap;
@@ -969,14 +1054,7 @@ main {
         border: 1px solid rgba(43, 30 ,25, .6);
         border-top: none;
         border-right: none;
-        padding-top: 37px;
     }
-    .banner__event-flag {
-        top: 0;
-        left: -125px;
-        width: 125px;
-    }
-
     .articles__heder {
         padding-bottom: 15px;
     }
@@ -1002,6 +1080,10 @@ main {
         position: absolute;
         right: 0;
         height: 50px;
+    }
+
+    .slide-list {
+        height: 200px;
     }
 
     .banner__img {
@@ -1050,6 +1132,10 @@ main {
         display: none;
     }
 
+    .slide-list {
+        height: 160px;
+    }
+
     .banner__img {
         height: 200px;
     }
@@ -1066,4 +1152,5 @@ main {
         line-height: 30px;
     }
 }
+
 
