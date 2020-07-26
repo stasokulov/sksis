@@ -357,7 +357,7 @@ main {
     left: 0;
     right: 0;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity .5s ease-in-out;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -366,7 +366,7 @@ main {
     opacity: 1;
 }
 .slide_1 {
-    background-image: url("img/img/students_1.webp");
+    background-image: url("img/img/students_1.jpg");
 }
 .slide_2 {
     background-image: url("img/img/students_2.jpg");
@@ -773,19 +773,19 @@ main {
     background-image: url("img/img/economy.jpg");
 }
 .tiles__tile-backface_background_img-2 {
-    background-image: url("img/img/post.webp");
+    background-image: url("img/img/post.jpg");
 }
 .tiles__tile-backface_background_img-3 {
-    background-image: url("img/img/aesthetics.webp");
+    background-image: url("img/img/aesthetics.jpg");
 }
 .tiles__tile-backface_background_img-4 {
     background-image: url("img/img/operator.jpg");
 }
 .tiles__tile-backface_background_img-5 {
-    background-image: url("img/img/insurance.webp");
+    background-image: url("img/img/insurance.jpg");
 }
 .tiles__tile-backface_background_img-6 {
-    background-image: url("img/img/ways.webp");
+    background-image: url("img/img/ways.jpg");
 }
 
 .info-card {
@@ -976,6 +976,9 @@ main {
     .tel {
         display: none;
     }
+    .search:before {
+        margin-right: 0;
+    }
     .schedule {
         display: none;
         justify-content: center;
@@ -987,6 +990,7 @@ main {
         display: none;
         position: absolute;
         bottom: 0;
+        left: 0;
         height: 0;
         box-shadow: 0 5px 10px -5px rgba(0,0,0,.2);
     }

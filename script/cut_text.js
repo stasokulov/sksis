@@ -2,7 +2,9 @@
 //    Текст обрезаем так, чтобы внутренний блок не растягивался и не выходил за рамки внешнего.
 //    Добавляем многоточие в конце.
 const containers = document.querySelectorAll('[data-cut_text="container"]');
-containers.forEach(container => {
+const containersArray = Array.prototype.slice.call(containers); //For IE
+
+containersArray.forEach(function(container) {
     // Собираем данные о блоке.
     const contHeight = container.offsetHeight;
     const contWidth = container.offsetWidth;
@@ -26,6 +28,7 @@ containers.forEach(container => {
     // Когда высота клона перестала превышать высоту исходного блока, или если символы закончились, вставляем обрезанный текств исходный блок.
     blockText.innerHTML = cloneBlockText.innerHTML;
     // Удаляем клон.
-    cloneContainer.remove();
+    // cloneContainer.remove();
+    parentContainer.removeChild(cloneContainer); //For IE
 });
 

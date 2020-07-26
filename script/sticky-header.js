@@ -15,11 +15,12 @@ function get_sticky_header () {
             let emptyBlock = document.createElement('div');
             emptyBlock.classList.add('empty-header');
             emptyBlock.style.height = header.offsetHeight + 'px';
-            header.before(emptyBlock);
+            header.insertAdjacentElement('beforebegin', emptyBlock);
             header.classList.add('fixed');
         } else if (scrolled <= sticky.offsetTop + headerPaddingTop && fixed !== null) {
             header.classList.remove('fixed');
-            emptyHeader.remove();
+            // emptyHeader.remove();
+            emptyHeader.parentElement.removeChild(emptyHeader); //For IE
         }
     }
 }

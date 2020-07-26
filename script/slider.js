@@ -1,6 +1,6 @@
 const slider = document.querySelector('.slider');
 const slides = slider.querySelectorAll('.slide');
-const slidesArray = Array.from(slides);
+const slidesArray = Array.prototype.slice.call(slides); //For IE
 let counter = 0;
 
 const banner = document.querySelector('.banner');
@@ -28,7 +28,7 @@ const sliderDataBase = [
 ]
 
 function showFirstSlide() {
-    slidesArray.forEach(slide => slide.classList.remove('active'));
+    slidesArray.forEach(function(slide) {slide.classList.remove('active')});
     counter = 0;
     slidesArray[counter].classList.add('active');
     fillBanner(counter);
