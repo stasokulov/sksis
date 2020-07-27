@@ -1,3 +1,4 @@
+// Вставляем дату в помеченные блоки.
 const date = new Date();
 const year = date.getFullYear();
 const dateContainers = document.querySelectorAll('[data-datetime]');

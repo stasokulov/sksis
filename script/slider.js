@@ -1,3 +1,6 @@
+// В стопке слайдов по очереди переставляем стиль, дающий видимость слайду.
+// Каждый раз перезаписываем содержимое полей баннера данными из базы.
+// Когда слайды заканчиваются, начинаем сначала.
 const slider = document.querySelector('.slider');
 const slides = slider.querySelectorAll('.slide');
 const slidesArray = Array.prototype.slice.call(slides); //For IE
@@ -28,7 +31,9 @@ const sliderDataBase = [
 ]
 
 function showFirstSlide() {
-    slidesArray.forEach(function(slide) {slide.classList.remove('active')});
+    slidesArray.forEach(function(slide) {
+        slide.classList.remove('active')
+    });
     counter = 0;
     slidesArray[counter].classList.add('active');
     fillBanner(counter);
@@ -40,7 +45,6 @@ function turnSlides() {
         counter++;
         fillBanner(counter);
     } else {
-        counter = 0;
         showFirstSlide();
     }
 }
