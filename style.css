@@ -540,12 +540,15 @@ main {
     box-sizing: content-box;
 }
 .news__title {
-    font-size: 27px;
-    line-height: 45px;
     color: #000;
 }
 .news__title:first-letter {
     text-transform: uppercase;
+}
+.news__title-variant {
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 45px;
 }
 .news__btn-all-news {
     font-weight: 300;
@@ -601,6 +604,7 @@ main {
 .article-news__title {
     font-size: 22px;
     line-height: 26px;
+    font-weight: normal;
     margin-bottom: 22px;
     color: #000
 }
@@ -616,6 +620,7 @@ main {
 }
 .side-column__title {
     font-size: 27px;
+    font-weight: normal;
     line-height: 45px;
     color: #000;
  }
@@ -677,6 +682,7 @@ main {
 }
 .content-block__title {
     font-size: 24px;
+    font-weight: normal;
     line-height: 29px;
     margin-bottom: 35px;
     letter-spacing: -.1px;
