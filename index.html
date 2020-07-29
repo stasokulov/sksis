@@ -14,7 +14,7 @@
   <header class="container header">
     <div class="row header__section-one">
       <div class="col-5 col-lg-4 col-xl-3">
-        <a href="#">
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
           <div class="eye-problem hover-opacity">
             <div class="eye-problem__icon"></div>
             <div class="eye-problem__text">
@@ -47,8 +47,12 @@
         </li>
       </ul>
       <div class="col-7 col-lg-4 col-xl-2 header__sign">
-        <button class="header__sign-btn">Регистрация</button>
-        <button class="header__sign-btn">Вход</button>
+        <button class="header__sign-btn" data-toggle="modal" data-target="#sorryModal">
+          Регистрация
+        </button>
+        <button class="header__sign-btn" data-toggle="modal" data-target="#sorryModal">
+          Вход
+        </button>
       </div>
     </div>
     <hr class="header__line-separator">
@@ -82,7 +86,7 @@
 
       </div>
       <div class="col-6 col-sm-3 col-md-4 col-lg-2 schedule">
-        <button class="schedule__btn hover-opacity">
+        <button class="schedule__btn hover-opacity" data-toggle="modal" data-target="#sorryModal">
           Расписание
         </button>
       </div>
@@ -97,12 +101,12 @@
       <nav class="col header__menu">
         <div class="header__menu-list-wrap">
           <ul class="header__menu-list">
-            <li><a class="header__menu-item" href="">Учащимся</a></li>
-            <li><a class="header__menu-item" href="">Абитуриентам</a></li>
-            <li><a class="header__menu-item" href="">Преподавателям</a></li>
-            <li><a class="header__menu-item" href="">Конртолирующим органам</a></li>
-            <li><a class="header__menu-item" href="">Новости и события</a></li>
-            <li><a class="header__menu-item" href="">О колледже</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Учащимся</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Абитуриентам</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподавателям</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Конртолирующим органам</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Новости и события</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">О колледже</a></li>
           </ul>
           <div class="header__extra-menu">
             <div class="header__extra-menu_item tel_extra-menu">
@@ -117,7 +121,7 @@
               </div>
             </div>
             <div class="header__extra-menu_item schedule_extra-menu">
-              <button class="schedule__btn hover-opacity">
+              <button class="schedule__btn hover-opacity" data-toggle="modal" data-target="#sorryModal">
                 Расписание
               </button>
             </div>
@@ -151,7 +155,6 @@
   </header>
   <main class="container">
     <section class="banner slider">
-
       <div class="row banner__main">
         <div class="col-lg-4">
           <div class="banner__about">
@@ -187,7 +190,9 @@
       <div class="row banner__footer">
         <div class="col-lg-4">
           <div class="banner__btn-wrap">
-            <button class="banner__btn hover-opacity">Подробнее о колледже</button>
+            <button class="banner__btn hover-opacity" data-toggle="modal" data-target="#sorryModal">
+              Подробнее о колледже
+            </button>
           </div>
         </div>
         <div class="slide-list">
@@ -227,7 +232,7 @@
         </div>
         <div class="row news__main">
           <div class="col-md-6 article-news">
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#sorryModal">
               <div class="article-news__image article-news__image_news-1">
                 <div class="article-news__date">
                   <span class="article-news__day">24</span>
@@ -241,7 +246,7 @@
             </a>
           </div>
           <div class="col-md-6 article-news">
-            <a href="#">
+            <a href="#" data-toggle="modal" data-target="#sorryModal">
               <div class="article-news__image article-news__image_news-2">
                 <div class="article-news__date">
                   <span class="article-news__day">22</span>
@@ -260,7 +265,7 @@
         <div class="articles__heder">
           <h2 class="side-column__title">Колонка учителя</h2>
         </div>
-        <a href="#">
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
           <div class="article-column" data-cut_text="container">
             <div class="article-column__image article-column__image_news-1"></div>
             <div class="article-column__text">
@@ -269,7 +274,7 @@
             </div>
           </div>
         </a>
-        <a href="#">
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
           <div class="article-column" data-cut_text="container">
             <div class="article-column__image article-column__image_news-2"></div>
             <div class="article-column__text">
@@ -329,7 +334,7 @@
       </div>
       <div class="col-lg-3 content-block">
         <h2 class="content-block__title">Обращение директора</h2>
-        <a href="#">
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
           <div class="info-card">
             <div class="info-card__img">
               <div class="info-card__badge">
@@ -442,19 +447,19 @@
             <div class="footer-menu__item-title">Учащимся</div>
             <ul class="footer-menu__submenu">
               <li>
-                <a class="footer-menu__submenu-item" href="#">Расписание</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Преподаватели</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Документы</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Оплата</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Ссылка 3</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
               </li>
             </ul>
           </div>
@@ -462,19 +467,19 @@
             <div class="footer-menu__item-title">Абитуриен&shy;там</div>
             <ul class="footer-menu__submenu">
               <li>
-                <a class="footer-menu__submenu-item" href="#">Расписание</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Преподаватели</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Документы</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Оплата</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Ссылка 3</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
               </li>
             </ul>
           </div>
@@ -482,19 +487,19 @@
             <div class="footer-menu__item-title">Преподава&shy;те&shy;лям</div>
             <ul class="footer-menu__submenu">
               <li>
-                <a class="footer-menu__submenu-item" href="#">Расписание</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Преподаватели</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Документы</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Оплата</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Ссылка 3</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
               </li>
             </ul>
           </div>
@@ -502,19 +507,19 @@
             <div class="footer-menu__item-title">Конртолиру&shy;ю&shy;щим органам</div>
             <ul class="footer-menu__submenu">
               <li>
-                <a class="footer-menu__submenu-item" href="#">Расписание</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Преподаватели</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Документы</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Оплата</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Ссылка 3</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
               </li>
             </ul>
           </div>
@@ -522,19 +527,19 @@
             <div class="footer-menu__item-title">Новости и события</div>
             <ul class="footer-menu__submenu">
               <li>
-                <a class="footer-menu__submenu-item" href="#">Расписание</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Преподаватели</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Документы</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Оплата</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Ссылка 3</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
               </li>
             </ul>
           </div>
@@ -542,19 +547,19 @@
             <div class="footer-menu__item-title">О  колледже</div>
             <ul class="footer-menu__submenu">
               <li>
-                <a class="footer-menu__submenu-item" href="#">Расписание</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Преподаватели</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Документы</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Оплата</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
               </li>
               <li>
-                <a class="footer-menu__submenu-item" href="#">Ссылка 3</a>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
               </li>
             </ul>
           </div>
@@ -592,10 +597,34 @@
       </div>
     </section>
   </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="sorryModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Раздел в разработке</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Приносим извинения
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ясно</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Custom JS -->
   <script src="script/cut_text.js"></script>
   <script src="script/insert_date.js"></script>
   <script src="script/sticky-header.js"></script>
   <script src="script/header-menu.js"></script>
   <script src="script/slider.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
