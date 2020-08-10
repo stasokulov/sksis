@@ -28,11 +28,11 @@ const sliderDataBase = [
         title: 'Новый год',
         subtitle: 'Изначально Раиса Кудашева опубликовала стихотворение «Ёлка» в детском журнале «Малютка» в 1903 году.'
     }
-]
+];
 
 function showFirstSlide() {
     slidesArray.forEach(function(slide) {
-        slide.classList.remove('active')
+        slide.classList.remove('active');
     });
     counter = 0;
     slidesArray[counter].classList.add('active');

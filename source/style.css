@@ -54,7 +54,7 @@ main {
     width: 30px;
     height: 20px;
     margin-right: 23px;
-    background-image: url("img/eye_icon.svg");
+    background-image: inline("img/inline/eye_icon.svg");
 }
 .eye-problem__text {
     color: #333;
@@ -84,17 +84,17 @@ main {
 .social__item_fb:before {
     width: 12px;
     height: 20px;
-    background-image: url("img/social/fb.svg");
+    background-image: inline("img/inline/social/fb.svg");
 }
 .social__item_vk:before {
     width: 28px;
     height: 18px;
-    background-image: url("img/social/vk.svg");
+    background-image: inline("img/inline/social/vk.svg");
 }
 .social__item_insta:before {
     width: 18px;
     height: 18px;
-    background-image: url("img/social/insta.svg");
+    background-image: inline("img/inline/social/insta.svg");
 }
 .social__item-text {
     padding-left: 12px;
@@ -228,7 +228,7 @@ main {
 }
 .search:before {
     content: '';
-    background-image: url("img/search_icon.svg");
+    background-image: inline("img/inline/search_icon.svg");
     margin-right: 12px;
     background-repeat: no-repeat;
     width: 30px;
@@ -366,26 +366,18 @@ main {
     opacity: 1;
 }
 .slide_1 {
-    background-image: url("img/img/students_1.jpg");
+    background-image: url("img/students_1.jpg");
 }
 .slide_2 {
-    background-image: url("img/img/students_2.jpg");
+    background-image: url("img/students_2.jpg");
 }
 .slide_3 {
-    background-image: url("img/img/students_3.jpg");
+    background-image: url("img/students_3.jpg");
 }
-
 
 .banner {
     color: #fff;
     margin-bottom: 46px;
-}
-.banner__img {
-    display: none;
-    background-image: url("img/img/students_2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .banner__main {
     height: 380px;
@@ -578,10 +570,10 @@ main {
     background-repeat: no-repeat;
 }
 .article-news__image_news-1 {
-    background-image: url("img/img/students_3.jpg");
+    background-image: url("img/students_3.jpg");
 }
 .article-news__image_news-2 {
-    background-image: url("img/img/students_4.jpg");
+    background-image: url("img/students_4.jpg");
 }
 .article-news__date {
     position: absolute;
@@ -623,7 +615,7 @@ main {
     font-weight: normal;
     line-height: 45px;
     color: #000;
- }
+}
 .article-column {
     display: flex;
     align-items: flex-start;
@@ -648,10 +640,10 @@ main {
     background-repeat: no-repeat;
 }
 .article-column__image_news-1 {
-    background-image: url("img/staff/face_3.jpg");
+    background-image: url("img/face_3.jpg");
 }
 .article-column__image_news-2 {
-    background-image: url("img/staff/face_4.jpg");
+    background-image: url("img/face_4.jpg");
 }
 .article-column__text {
     padding-left: 12px;
@@ -776,22 +768,22 @@ main {
     transform: rotateX(360deg);
 }
 .tiles__tile-backface_background_img-1 {
-    background-image: url("img/img/economy.jpg");
+    background-image: url("img/economy.jpg");
 }
 .tiles__tile-backface_background_img-2 {
-    background-image: url("img/img/post.jpg");
+    background-image: url("img/post.jpg");
 }
 .tiles__tile-backface_background_img-3 {
-    background-image: url("img/img/aesthetics.jpg");
+    background-image: url("img/aesthetics.jpg");
 }
 .tiles__tile-backface_background_img-4 {
-    background-image: url("img/img/operator.jpg");
+    background-image: url("img/operator.jpg");
 }
 .tiles__tile-backface_background_img-5 {
-    background-image: url("img/img/insurance.jpg");
+    background-image: url("img/insurance.jpg");
 }
 .tiles__tile-backface_background_img-6 {
-    background-image: url("img/img/ways.jpg");
+    background-image: url("img/ways.jpg");
 }
 
 .info-card {
@@ -805,7 +797,7 @@ main {
     position: relative;
     height: 170px;
     margin-bottom: 20px;
-    background-image: url("img/staff/director.jpg");
+    background-image: url("img/director.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -865,13 +857,13 @@ main {
     font-size: 14px;
 }
 .people-list__image_avatar-1 {
-    background-image: url("img/staff/face_1.jpg");
+    background-image: url("img/face_1.jpg");
 }
 .people-list__image_avatar-2 {
-    background-image: url("img/staff/face_2.jpg");;
+    background-image: url("img/face_2.jpg");;
 }
 .people-list__image_avatar-3 {
-    background-image: url("img/staff/face_5.jpg");;
+    background-image: url("img/face_5.jpg");;
 }
 
 .footer-menu {
@@ -945,7 +937,7 @@ main {
 
 @media (max-width: 1200px) {
     .header__social {
-     justify-content: center;
+        justify-content: center;
     }
     .social__item-wrap:last-child {
         margin-right: 0;
@@ -1124,8 +1116,6 @@ main {
     }
     .header__sign {
         flex-direction: row;
-        /*justify-content: center;*/
-        /*padding-top: 28px;*/
     }
     .header__sign-btn:nth-child(odd) {
         border-right: solid 1px #333;
@@ -1162,5 +1152,3 @@ main {
         line-height: 30px;
     }
 }
-
-
