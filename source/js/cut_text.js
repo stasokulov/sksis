@@ -2,7 +2,8 @@
 //    Текст обрезаем так, чтобы внутренний блок не растягивался и не выходил за рамки внешнего.
 //    Добавляем многоточие в конце.
 const containers = document.querySelectorAll('[data-cut_text="container"]');
-const containersArray = Array.prototype.slice.call(containers); //For IE
+//const containersArray = [...containers]; // Doesn't work in IE11 and doesn't convert with Babel
+const containersArray = Array.prototype.slice.call( containers, 0 );
 
 containersArray.forEach(function(container) {
     // Собираем данные о блоке.
