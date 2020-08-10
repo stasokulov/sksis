@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang=ru>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Сыктывкарский  колледж сервиса и связи</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="container header">
+    <div class="row header__section-one">
+      <div class="col-5 col-lg-4 col-xl-3">
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
+          <div class="eye-problem hover-opacity">
+            <div class="eye-problem__icon"></div>
+            <div class="eye-problem__text">
+              Версия для<br>слабовидящих
+            </div>
+          </div>
+        </a>
+      </div>
+      <ul class="col-sm-4 col-xl-7 header__social social">
+        <li class="social__item-wrap">
+          <a href="http://facebook.com/" target="blanc">
+            <div class="social__item social__item_fb">
+              <span class="social__item-text">Мы в Facebook</span>
+            </div>
+          </a>
+        </li>
+        <li class="social__item-wrap">
+          <a href="https://vk.com/" target="blanc">
+            <div class="social__item social__item_vk">
+              <span class="social__item-text">Мы Вконтакте</span>
+            </div>
+          </a>
+        </li>
+        <li class="social__item-wrap">
+          <a href="https://www.instagram.com/" target="blanc">
+            <div class="social__item social__item_insta">
+              <span class="social__item-text">Мы Instagram</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="col-7 col-lg-4 col-xl-2 header__sign">
+        <button class="header__sign-btn" data-toggle="modal" data-target="#sorryModal">
+          Регистрация
+        </button>
+        <button class="header__sign-btn" data-toggle="modal" data-target="#sorryModal">
+          Вход
+        </button>
+      </div>
+    </div>
+    <hr class="header__line-separator">
+    <div class="row header__section-two sticky">
+      <div class="col-md-9 col-lg-5 col-xl-4 logo">
+        <div class="logo__img">
+          <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="logo__text">
+          СкСиС
+        </div>
+        <div class="logo__slogan">
+          <span>Новый подход</span><span>к образованию</span>
+        </div>
+      </div>
+      <div class="col-md-4 tel">
+        <a href="tel:+78212332454">
+          <div class="tel__number">
+            8 <mark class="tel__number-code">(8212)</mark> 332 454
+          </div>
+        </a>
+        <div class="tel__text">
+          <span>Телефон&nbsp;</span>
+          <span> в Cыктывкаре</span>
+        </div>
+      </div>
+      <div class="col-md-1 col-lg-1 col-xl-2 search__wrap hover-opacity">
+        <div class="search">
+          <span class="search__text">Поиск по сайту</span>
+        </div>
+
+      </div>
+      <div class="col-6 col-sm-3 col-md-4 col-lg-2 schedule">
+        <button class="schedule__btn hover-opacity" data-toggle="modal" data-target="#sorryModal">
+          Расписание
+        </button>
+      </div>
+      <input id="toggle-burger" type="checkbox" hidden>
+      <div class="col-md-2 burger__wrap">
+        <label class="burger" for="toggle-burger">
+          <span class="burger__item burger__item_top"></span>
+          <span class="burger__item burger__item_middle"></span>
+          <span class="burger__item burger__item_bottom"></span>
+        </label>
+      </div>
+      <nav class="col header__menu">
+        <div class="header__menu-list-wrap">
+          <ul class="header__menu-list">
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Учащимся</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Абитуриентам</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподавателям</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Конртолирующим органам</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">Новости и события</a></li>
+            <li><a class="header__menu-item" href="#" data-toggle="modal" data-target="#sorryModal">О колледже</a></li>
+          </ul>
+          <div class="header__extra-menu">
+            <div class="header__extra-menu_item tel_extra-menu">
+              <a href="tel:+78212332454">
+                <div class="tel__number">
+                  8 <mark class="tel__number-code">(8212)</mark> 332 454
+                </div>
+              </a>
+              <div class="tel__text">
+                <span>Телефон&nbsp;</span>
+                <span> в Cыктывкаре</span>
+              </div>
+            </div>
+            <div class="header__extra-menu_item schedule_extra-menu">
+              <button class="schedule__btn hover-opacity" data-toggle="modal" data-target="#sorryModal">
+                Расписание
+              </button>
+            </div>
+            <ul class="header__extra-menu_item">
+              <li class="social__item-wrap">
+                <a href="http://facebook.com/" target="blanc">
+                  <div class="social__item social__item_fb">
+                    <span class="social__item-text">Мы в Facebook</span>
+                  </div>
+                </a>
+              </li>
+              <li class="social__item-wrap">
+                <a href="https://vk.com/" target="blanc">
+                  <div class="social__item social__item_vk">
+                    <span class="social__item-text">Мы Вконтакте</span>
+                  </div>
+                </a>
+              </li>
+              <li class="social__item-wrap">
+                <a href="https://www.instagram.com/" target="blanc">
+                  <div class="social__item social__item_insta">
+                    <span class="social__item-text">Мы Instagram</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="banner slider">
+      <div class="row banner__main">
+        <div class="col-lg-4">
+          <div class="banner__about">
+            <div class="banner__about-title">
+              Сыктывкарский колледж сервиса и связи
+            </div>
+            <div class="banner__about-statistics">
+              <div class="banner__statistics-item">
+                <span class="banner__statistics-number">50</span>
+                <div class="banner__statistics-text">
+                  <span class="banner__statistics-text-word">Профессиональных</span>
+                  <span class="banner__statistics-text-word">преподавателей</span>
+                </div>
+              </div>
+              <div class="banner__statistics-item">
+                <span class="banner__statistics-number">10</span>
+                <div class="banner__statistics-text">
+                  <span class="banner__statistics-text-word">Учебных</span>
+                  <span class="banner__statistics-text-word">направлений</span>
+                </div>
+              </div>
+              <div class="banner__statistics-item">
+                <span class="banner__statistics-number">42</span>
+                <div class="banner__statistics-text">
+                  <span class="banner__statistics-text-word">Специализированных</span>
+                  <span class="banner__statistics-text-word">кабинета</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row banner__footer">
+        <div class="col-lg-4">
+          <div class="banner__btn-wrap">
+            <button class="banner__btn hover-opacity" data-toggle="modal" data-target="#sorryModal">
+              Подробнее о колледже
+            </button>
+          </div>
+        </div>
+        <div class="slide-list">
+          <div class="slide slide_1 active"></div>
+          <div class="slide slide_2"></div>
+          <div class="slide slide_3"></div>
+        </div>
+        <div class="col-lg-8 banner__event">
+          <div class="banner__event-date">
+            <span class="banner__event-day">25</span>
+            <span class="banner__event-month">января</span>
+          </div>
+          <div class="banner__event-text-wrap">
+            <div class="banner__event-text">
+              <div class="banner__event-title">ДЕНЬ СТУДЕНТА</div>
+              <div class="banner__event-subtitle">
+                <span class="banner__event-subtitle-row">Подздравляем всех учащихся с Днем студента.</span>
+                <span class="banner__event-subtitle-row">Желаем творческих и профессиональных успехов.</span>
+              </div>
+            </div>
+            <div class="banner__event-flag">событие</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="row articles">
+      <div class="col-lg-8 news">
+        <div class="row">
+          <div class="col articles__heder">
+            <div class="news__title">
+              <h2 class="news__title-variant d-none d-sm-inline">последние новости</h2>
+              <h2 class="news__title-variant d-sm-none">новости</h2>
+            </div>
+            <button class="news__btn-all-news">Все <span class="d-none d-sm-inline">новости</span></button>
+          </div>
+        </div>
+        <div class="row news__main">
+          <div class="col-md-6 article-news">
+            <a href="#" data-toggle="modal" data-target="#sorryModal">
+              <div class="article-news__image article-news__image_news-1">
+                <div class="article-news__date">
+                  <span class="article-news__day">24</span>
+                  <span class="article-news__month">янв</span>
+                </div>
+              </div>
+              <h3 class="article-news__title">Встреча студентов</h3>
+              <div class="article-news__subtitle">
+                В минувший понедельник состоялась встреча студентов разных направлений. На повестке дня был вопрос о внеучебной студентческой жизни о хобби и проблемах поиска работы.
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 article-news">
+            <a href="#" data-toggle="modal" data-target="#sorryModal">
+              <div class="article-news__image article-news__image_news-2">
+                <div class="article-news__date">
+                  <span class="article-news__day">22</span>
+                  <span class="article-news__month">янв</span>
+                </div>
+              </div>
+              <h3 class="article-news__title">Восросы учащихся</h3>
+              <div class="article-news__subtitle">
+                В минувший понедельник состоялась встреча студентов разных направлений. На повестке дня был вопрос о внеучебной студентческой жизни о хобби и проблемах поиска работы.
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 side-column">
+        <div class="articles__heder">
+          <h2 class="side-column__title">Колонка учителя</h2>
+        </div>
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
+          <div class="article-column" data-cut_text="container">
+            <div class="article-column__image article-column__image_news-1"></div>
+            <div class="article-column__text">
+              <span class="article-column__title">Как быстро трудоустроиться после получения образования</span>
+              <span class="article-column__subtitle" data-cut_text="text">Многие учащиеся сталкиваются с проблемой трудоустройства после завершения обучения и получения диплома. В этой статье я расскажу как избежать этой проблемы и быстро найти работу по специальности. Для того, конечно, потребуется приложить определенные усилия, а не сидеть сложа руки и не тянуть резину в долгий ящик.</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
+          <div class="article-column" data-cut_text="container">
+            <div class="article-column__image article-column__image_news-2"></div>
+            <div class="article-column__text">
+              <span class="article-column__title">Как быстро трудоустроиться после получения образования</span>
+              <span class="article-column__subtitle" data-cut_text="text">Многие учащиеся сталкиваются с проблемой трудоустройства после завершения обучения и получения диплома</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="row info">
+      <div class="col-lg-5 content-block">
+        <h2 class="content-block__title">
+          Основные направления
+        </h2>
+        <div class="container">
+          <div class="row tiles">
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_withe">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-4">
+                <span class="tiles__tile-text">Экономика и бухгалтер&shy;ский учет</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-1"></div>
+            </div>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-2">
+                <span class="tiles__tile-text">Почтовая связь</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-2"></div>
+            </div>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-1">
+                <span class="tiles__tile-text">Прикладная эстетика</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-3"></div>
+            </div>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_withe">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-5">
+                <span class="tiles__tile-text">Оператор связи</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-4"></div>
+            </div>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-3">
+                <span class="tiles__tile-text">Страховое дело</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-5"></div>
+            </div>
+            <div class="col-6 col-sm-4 tiles__tile tiles__tile_color_black">
+              <div class="tiles__tile-frontface tiles__tile-frontface_background_blue-4 tiles__tile-frontface_content_centred">
+                <span class="tiles__tile-text tiles__tile-text_bold">10+</span>
+                <span class="tiles__tile-text">направлений</span>
+              </div>
+              <div class="tiles__tile-backface tiles__tile-backface_background_img-6"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 content-block">
+        <h2 class="content-block__title">Обращение директора</h2>
+        <a href="#" data-toggle="modal" data-target="#sorryModal">
+          <div class="info-card">
+            <div class="info-card__img">
+              <div class="info-card__badge">
+                Петрова Ирина Владимирована
+              </div>
+            </div>
+            <div class="info-card__title">
+              Добро пожаловать на оффициальный сайт Сыктывкарского колледжа сервиса и связи
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 content-block">
+        <h2 class="content-block__title">Преподаватели</h2>
+        <button class="content-block__btn">Все</button>
+        <div class="people-list">
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-1"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Петрова Анастасия Владимировна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-2"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Данилина Любовь Викторовна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+          <div class="people-list__item">
+            <div class="people-list__image people-list__image_avatar-3"></div>
+            <div class="people-list__text">
+              <span class="people-list__title">Степанова Анастасия Михайловна</span>
+              <span class="people-list__subtitle">Парикмахерское дело</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-menu">
+      <div class="container footer-menu__inner-wrap">
+        <div class="row">
+          <div class="col-6 col-md-4 col-xl-2 footer-menu__item">
+            <div class="footer-menu__item-title">Учащимся</div>
+            <ul class="footer-menu__submenu">
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-xl-2 footer-menu__item">
+            <div class="footer-menu__item-title">Абитуриен&shy;там</div>
+            <ul class="footer-menu__submenu">
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-xl-2 footer-menu__item">
+            <div class="footer-menu__item-title">Преподава&shy;те&shy;лям</div>
+            <ul class="footer-menu__submenu">
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-xl-2 footer-menu__item">
+            <div class="footer-menu__item-title">Конртолиру&shy;ю&shy;щим органам</div>
+            <ul class="footer-menu__submenu">
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-xl-2 footer-menu__item">
+            <div class="footer-menu__item-title">Новости и события</div>
+            <ul class="footer-menu__submenu">
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-xl-2 footer-menu__item">
+            <div class="footer-menu__item-title">О  колледже</div>
+            <ul class="footer-menu__submenu">
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Расписание</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Преподаватели</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Документы</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Оплата</a>
+              </li>
+              <li>
+                <a class="footer-menu__submenu-item" href="#" data-toggle="modal" data-target="#sorryModal">Ссылка 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-menu__color-line">
+          <div class="footer-menu__color-line_lightblue"></div>
+          <div class="footer-menu__color-line_blue"></div>
+          <div class="footer-menu__color-line_yellow"></div>
+        </div>
+      </div>
+    </section>
+    <section class="container footer-copyright">
+      <div class="row">
+        <div class="col-xl-4 logo logo_footer">
+          <div class="logo__img">
+            <img src="img/logo.svg" alt="logo">
+          </div>
+          <div class="logo__text">
+            СкСиС
+          </div>
+          <div class="logo__slogan">
+            <span>Новый подход</span><span>к образованию</span>
+          </div>
+        </div>
+        <div class="col-xl-4 footer-copyright__copyright">
+          <div>
+            <div class="footer-copyright__text">
+              Сыктывкарский колледж сервиса и связи <span data-datetime="year">2016</span>.
+            </div>
+            <div class="footer-copyright__text">
+              Все права защищены
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="sorryModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Раздел в разработке</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Приносим извинения
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Ясно</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Custom JS -->
+  <script src="script.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
