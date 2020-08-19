@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+ul {
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.hover-opacity:hover {
+  opacity: .5;
+}
+.hidden {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+  &__img {
+    margin-right: 16px;
+
+    img {
+      width: 51px;
+      height: 55px;
+
+      @media (max-width: 576px) {
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
+
+  &__text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 24px;
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+      margin-right: 0;
+    }
+  }
+  &__slogan {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Exo 2', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #0C0C0C;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
+  }
+  &_footer {
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
+  }
+}
+
