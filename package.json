@@ -47,7 +47,7 @@
     "has-value": "^1.0.0",
     "has-values": "^1.0.0",
     "homedir-polyfill": "^1.0.3",
-    "hosted-git-info": "^2.7.1",
+    "hosted-git-info": "^2.8.9",
     "inherits": "^2.0.3",
     "ini": "^1.3.5",
     "interpret": "^1.2.0",
