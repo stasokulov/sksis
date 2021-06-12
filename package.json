@@ -37,7 +37,7 @@
     "function-bind": "^1.1.1",
     "get-caller-file": "^1.0.3",
     "get-value": "^2.0.6",
-    "glob-parent": "^3.1.0",
+    "glob-parent": "^5.1.2",
     "graceful-fs": "^4.1.15",
     "gulp-cli": "^2.0.1",
     "gulp-mustache": "^4.1.1",
