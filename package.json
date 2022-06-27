@@ -18,7 +18,7 @@
     "browserslist": "^4.14.0",
     "collection-map": "^1.0.0",
     "collection-visit": "^1.0.0",
-    "copy-props": "^2.0.4",
+    "copy-props": "^2.0.5",
     "d": "^1.0.0",
     "debug": "^2.6.9",
     "define-properties": "^1.1.3",
